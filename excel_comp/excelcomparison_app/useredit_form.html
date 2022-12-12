@@ -1,0 +1,7 @@
+ <form action="." method="post">
+     {% csrf_token %}    
+     {{ userprofile_form }}           
+     <input type="submit" value="Save Changes" name="save" />
+     <input type="reset" value="Cancel" name="cancel" />
+     <br/>
+ </form>

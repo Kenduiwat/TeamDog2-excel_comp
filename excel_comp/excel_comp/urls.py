@@ -18,4 +18,6 @@ from django.urls import path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('edit_user/<int:user_id>/', views.userEdit, name='user_edit'),
+
 ]
